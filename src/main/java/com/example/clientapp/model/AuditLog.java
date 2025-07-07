@@ -1,8 +1,15 @@
 package com.example.clientapp.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
 import java.time.LocalDateTime;
 import java.util.Map;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AuditLog {
     private String auditId;
     private String entityType;
@@ -14,8 +21,4 @@ public class AuditLog {
     private String reason;
     private String ipAddress;
     private String userAgent;
-
-    // Getters and setters omitted for brevity
-
-    // Constructors, equals, hashCode, toString can be generated as needed
-} 
+}

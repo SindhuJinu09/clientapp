@@ -20,6 +20,11 @@ dependencies {
     implementation "io.jsonwebtoken:jjwt-api:${jwtVersion}"
     runtimeOnly "io.jsonwebtoken:jjwt-impl:${jwtVersion}"
     runtimeOnly "io.jsonwebtoken:jjwt-jackson:${jwtVersion}"
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
